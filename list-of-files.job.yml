@@ -1,0 +1,5 @@
+files:
+  - class: File
+    path: README.md
+  - class: File
+    path: LICENSE
