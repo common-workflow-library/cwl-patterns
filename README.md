@@ -11,6 +11,7 @@ _Some patterns commonly encountered when writing CWL workflows_
   - [I don't want to escape the `$`](#i-dont-want-to-escape-the-)
 - [Embedding a bash script (style 2)](#embedding-a-bash-script-style-2)
 - [Manipulating a list of files using expressions](#manipulating-a-list-of-files-using-expressions)
+- [Link input files to working directory](#link-input-files-to-working-directory)
 
 <!-- /TOC -->
 
@@ -79,3 +80,12 @@ in the syntax accepted by the script.
 
 Here is an example for [Python](list-of-files-python.cwl) and for
 [bash](list-of-files-bash.cwl)
+
+
+## Link input files to working directory
+> I have a tool that does not do well with arbitrary file paths. I'd like to
+> link the files into the working directory so I don't have to deal with
+> arbitrary mount paths and so on.
+
+You can use `InitialWorkDirRequirement` to link the files
+([example](stage-files.cwl)).
