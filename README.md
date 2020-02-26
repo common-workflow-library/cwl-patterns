@@ -10,7 +10,7 @@ _Some patterns commonly encountered when writing CWL workflows_
   - [I have `$` signs in my script :(](#i-have--signs-in-my-script-)
   - [I don't want to escape the `$`](#i-dont-want-to-escape-the-)
 - [Embedding a bash script (style 2)](#embedding-a-bash-script-style-2)
-- [Bash script processing a list of files](#bash-script-processing-a-list-of-files)
+- [Manipulating a list of files using expressions](#manipulating-a-list-of-files-using-expressions)
 
 <!-- /TOC -->
 
@@ -51,8 +51,9 @@ feature, depending on your use case ([example](embed2.cwl)).
 A bash script can be passed as a string via the command line and invoked from
 the command line.  ([example](list-of-files-bash.cwl)).
 
-## Bash script processing a list of files
-> I have an input that is a list of files. I will  
+## Manipulating a list of files using expressions
+> I have an input that is a list of files. I wish to do processing based on the
+> file paths. 
 
 This depends a bit on what the expression is intended to do. The easiest is if
 the whole processing can be done in javascript. In this case the pattern looks
@@ -77,4 +78,4 @@ succinct JS expression that converts the passed JSON object into a list of paths
 in the syntax accepted by the script. 
 
 Here is an example for [Python](list-of-files-python.cwl) and for
-[bash](list-of-files-bash.cwl) 
+[bash](list-of-files-bash.cwl)
