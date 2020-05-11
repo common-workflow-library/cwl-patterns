@@ -89,3 +89,5 @@ Here is an example for [Python](list-of-files-python.cwl) and for
 
 You can use `InitialWorkDirRequirement` to link the files
 ([example](stage-files.cwl)).
+
+You can mix this with embedding scripts ([example](embed-script-and-stage-files.cwl)). 
