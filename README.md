@@ -12,6 +12,7 @@ _Some patterns commonly encountered when writing CWL workflows_
 - [Embedding a bash script (style 2)](#embedding-a-bash-script-style-2)
 - [Manipulating a list of files using expressions](#manipulating-a-list-of-files-using-expressions)
 - [Link input files to working directory](#link-input-files-to-working-directory)
+- [How to handle port type mismatches](#how-to-handle-port-type-mismatches)
 
 <!-- /TOC -->
 
@@ -90,4 +91,21 @@ Here is an example for [Python](list-of-files-python.cwl) and for
 You can use `InitialWorkDirRequirement` to link the files
 ([example](stage-files.cwl)).
 
-You can mix this with embedding scripts ([example](embed-script-and-stage-files.cwl)). 
+You can mix this with embedding scripts
+([example](embed-script-and-stage-files.cwl)). 
+
+## How to handle port type mismatches
+
+- Tool A produces a list of Files (or strings, ints ...) 
+- Tool B accepts only a single File (or string, int ...)
+- How do I connect A to B?
+
+If you are _sure_ this is not going to be a problem, e.g. in this context A will
+only ever produce one file, or you are only interested in one file, you can use
+a step `valueFrom` expression to convert the types.
+
+[Here](port-matching/workflow.cwl) is a workflow that will raise validation
+warnings and will fail on execution because of port type mismatches.
+
+[Here](port-matching/workflow-value-from.cwl) is the same workflow with
+`valueFrom` added to make the port types match.
