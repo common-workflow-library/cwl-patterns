@@ -13,7 +13,7 @@ _Some patterns commonly encountered when writing CWL workflows_
 - [Manipulating a list of files using expressions](#manipulating-a-list-of-files-using-expressions)
 - [Link input files to working directory](#link-input-files-to-working-directory)
 - [How to handle port type mismatches](#how-to-handle-port-type-mismatches)
-
+- [Which of the Workflow Patterns Initiative patterns does CWL support?](workflow_patterns_initiative/README.md)
 <!-- /TOC -->
 
 ## Manifest file via Javascript

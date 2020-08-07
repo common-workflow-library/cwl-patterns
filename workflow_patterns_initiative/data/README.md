@@ -1,6 +1,9 @@
-<a href="http://www.workflowpatterns.com/patterns/data/">Workflow Data Patterns</a>
 
-40 patterns for data, 23 patterns not supported by CWL
+# WPI's [Workflow Data Patterns](http://www.workflowpatterns.com/patterns/data/) and CWL
+
+Of the 40 WPI Workflow Data patterns, 17 patterns are supported by CWL v1.2 or earlier and 23 patterns are unsupported.
+
+[Back to the list of WPI pattern categories](../README.md)
 
 * <a href="http://www.workflowpatterns.com/patterns/data/visibility/wdp1.php">Pattern 1 (Task Data)</a>
 
