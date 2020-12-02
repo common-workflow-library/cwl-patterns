@@ -33,6 +33,15 @@ file on the fly before invoking the tool ([example](manifest.cwl)).
 You can embed the script as an `InitialWorkDirRequirement`
 ([example](embed.cwl)).
 
+### I have by script in a separate file
+> I use good software practices. My Python/Ruby/Haskell/... script is in a
+> separate file from my CWL wrapper.
+
+You can use the `$include` directive to pull in the file into your CWL.
+You can use it in `InitialWorkDirRequirement`
+([example](include-file/external-python.cwl)) or in File Contents ([example](include-file/external-python-no-expansion.cwl))
+
+
 ### I have `$` signs in my script :(
 > My embedded (Bash/Python/R) script has "$" signs in it and this is conflicting
 > with CWL parameter references. How do get them to play nicely together?
