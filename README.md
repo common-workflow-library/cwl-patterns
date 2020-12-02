@@ -17,6 +17,8 @@ _Some patterns commonly encountered when writing CWL workflows_
 
 <!-- /TOC -->
 
+[Which of the Workflow Patterns Initiative patterns does CWL support?](workflow_patterns_initiative/README.md)
+
 ## Manifest file via Javascript
 > My tool takes in a list of filenames as input. I used to pass each file name
 > on the command line, but when I scale up I run into unix  "Argument list too
