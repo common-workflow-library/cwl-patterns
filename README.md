@@ -7,13 +7,14 @@ _Some patterns commonly encountered when writing CWL workflows_
 
 - [Manifest file via Javascript](#manifest-file-via-javascript)
 - [Embedding scripts](#embedding-scripts)
-  - [I have `$` signs in my script :(](#i-have--signs-in-my-script-)
-  - [I don't want to escape the `$`](#i-dont-want-to-escape-the-)
+    - [I have my script in a separate file](#i-have-my-script-in-a-separate-file)
+    - [I have `$` signs in my script :(](#i-have--signs-in-my-script-)
+    - [I don't want to escape the `$`](#i-dont-want-to-escape-the-)
 - [Embedding a bash script (style 2)](#embedding-a-bash-script-style-2)
 - [Manipulating a list of files using expressions](#manipulating-a-list-of-files-using-expressions)
 - [Link input files to working directory](#link-input-files-to-working-directory)
 - [How to handle port type mismatches](#how-to-handle-port-type-mismatches)
-- [Which of the Workflow Patterns Initiative patterns does CWL support?](workflow_patterns_initiative/README.md)
+
 <!-- /TOC -->
 
 ## Manifest file via Javascript
@@ -33,7 +34,7 @@ file on the fly before invoking the tool ([example](manifest.cwl)).
 You can embed the script as an `InitialWorkDirRequirement`
 ([example](embed.cwl)).
 
-### I have by script in a separate file
+### I have my script in a separate file
 > I use good software practices. My Python/Ruby/Haskell/... script is in a
 > separate file from my CWL wrapper.
 
