@@ -6,7 +6,7 @@ Each sub-folder analyzes the features of CWL against a category of patterns foun
 - Resource patterns
 - [Data](data/README.md) patterns
 - Exception Handling patterns
-- Presentation patterns
+- [Presentation](presentation/README.md) patterns
 - Event Log Imperfection patterns
 
 
