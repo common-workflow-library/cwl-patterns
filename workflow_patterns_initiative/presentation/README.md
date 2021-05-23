@@ -1,7 +1,7 @@
 
 # WPI's [Workflow Presentation Patterns](http://www.workflowpatterns.com/patterns/presentation/) and CWL
 
-Of the N WPI Workflow Presentation patterns, X patterns are supported by CWL v1.2 or earlier and Y patterns are unsupported.
+Of the 20 WPI Workflow Presentation patterns, 19 patterns are supported by CWL v1.2 or earlier and 1 patterns is unsupported.
 
 Note, as CWL specificaltion does not have any graphical notation, the Concrete Syntax Patterns will highly depend on the platform responsible for rendering the visual representation of the workflow.
 
