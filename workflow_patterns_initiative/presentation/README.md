@@ -85,6 +85,8 @@ The abstract syntax of a process model relates to the formal structure of proces
 ## Concrete Syntax Patterns
 The concrete syntax of a process models deals with its visual appearance including symbols, colors and positions.
 
+![](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/images/Fig01.jpg)
+
 * [Pattern 1 (Layout Guidance)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm1.php)
 
 * [Pattern 2 (Enclosure Highlight)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm2.php)
