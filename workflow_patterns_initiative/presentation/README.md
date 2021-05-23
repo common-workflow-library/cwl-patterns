@@ -8,6 +8,8 @@ Of the N WPI Workflow Presentation patterns, X patterns are supported by CWL v1.
 
 The abstract syntax of a process model relates to the formal structure of process elements and the relationships among them.
 
+![](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/images/fig2.jpg)
+
 * [Pattern 1 (Block Structuring)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm1.php)
 
   *In a block-structured process model, each split element has a corresponding join element of the same type, and split-join pairs are properly nested.*
