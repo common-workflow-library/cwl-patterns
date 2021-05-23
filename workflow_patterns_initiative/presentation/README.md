@@ -40,18 +40,46 @@ The abstract syntax of a process model relates to the formal structure of proces
 
 * [Pattern 6 (Orthogonal Modularization)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm6.php)
 
+  *The pattern captures features to decompose a process model along the crosscutting concerns of the modeling domain, which are scattered across several model elements or modules.*
+
+  **Yes**. If necessary, a group of steps that belong to a certain modeling domain can be put into a subworkflow and reused multiple times within the same main workflow. As an example, all the steps related to QC analysis of genomic data can be placed into a separate subworkflow.
+
 * [Pattern 7 (Composition)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm7.php)
+
+  *The pattern describes features for constructing a consolidated process model from different disjoint modules, thus possibly reversing the effects of modularization.*
+
+  **Yes**. Any subworkflow can be replaced by a set of command line tools and other subworkflows it consists of. The logic of the main pipeline will remain the same.
 
 * [Pattern 8 (Merging)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm8.php)
 
+  *The pattern describes features for merging similar process models based on their commonalities, i.e. their identical model elements.*
+
+  **Yes**. Workflows of the same or similar functionality can be merged into a single more complex pipeline. For additional functionality extra inputs can be added.
+
 * [Pattern 9 (Omission)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm9.php)
+
+  *The pattern captures features to remove one or more elements from a process model and reconnect the remaining ones. It implies information lost.*
+
+  **Yes**. Unused tasks can be removed from the workflow as long as all broken connections between the remaining tasks are restored.
 
 * [Pattern 10 (Collapse)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm10.php)
 
+  *The pattern describes features to synthesize multiple model elements into a single one of more abstract nature, where the distinction among the constituent elements is no longer relevant. It implies information synthesis.*
+
+  **Yes**. Workflow steps can be grouped together and put into a separate subworkflow, thus making the process model more abstract and more understandable.
+
 * [Pattern 11 (Restriction)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm11.php)
+
+  *The pattern captures features to restrict the syntax and semantics of a process modeling language, by removing modeling concepts from the language's meta-model or restricting the existing ones.*
+
+  **Yes**. Certain syntax, semantic and functional restrictions can be applied when omitting 
+  `SubworkflowFeatureRequirement`, `ScatterFeatureRequirement`, `MultipleInputFeatureRequirement`, `StepInputExpressionRequirement`, `InplaceUpdateRequirement`, `InlineJavascriptRequirement`, `SchemaDefRequirement`, etc.
 
 * [Pattern 12 (Extension)](http://www.workflowpatterns.com/patterns/presentation/abstractsyntax/asm12.php)
 
+  *The pattern captures features to extend the syntax and the semantics of a process modeling language, by adding new modeling concepts to the language's meta-model, or refining the existing ones*
+
+  **Yes**. Implementation extensions not required for correct execution and metadata may be provided as additional fields on any object. Such extensions fields must use a namespace prefix listed in the workflow's `$namespaces` section.
 ## Concrete Syntax Patterns
 The concrete syntax of a process models deals with its visual appearance including symbols, colors and positions.
 
