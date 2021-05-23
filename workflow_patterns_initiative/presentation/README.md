@@ -3,6 +3,8 @@
 
 Of the N WPI Workflow Presentation patterns, X patterns are supported by CWL v1.2 or earlier and Y patterns are unsupported.
 
+Note, as CWL specificaltion does not have any graphical notation, the Concrete Syntax Patterns will highly depend on the platform responsible for rendering the visual representation of the workflow.
+
 [Back to the list of WPI pattern categories](../README.md)
 ## Abstract Syntax Patterns
 
@@ -89,16 +91,48 @@ The concrete syntax of a process models deals with its visual appearance includi
 
 * [Pattern 1 (Layout Guidance)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm1.php)
 
+  *The pattern refers to the availability of layout conventions or advice to organize the various model elements on a canvas.*
+
+  **Yes**. CWL allows to provide additional metadata for any object. As an example, Seven Bridges platform extends the description of each model element with `sbg:x` and `sbg:y` fields to define the locations of the items on canvas.
+
 * [Pattern 2 (Enclosure Highlight)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm2.php)
+
+  *The pattern refers to the availability of modeling constructs to visually enclose a set of logically-related model elements.*
+
+  **Yes**. CWL allows to provide additional metadata for any object. As an example, SciDAP platform extends the descriptions of workflow inputs and outputs with `sd:layout` and `sd:visualPlugins` fields to group logically-related model elements.
 
 * [Pattern 3 (Graphical Highlight)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm3.php)
 
+  *The pattern refers to the availability of features to change the visual appearance of model elements, such as shape, line thickness and type, background color, font type and color.*
+  
+  **Yes**. CWL allows to provide additional metadata for any object. That, if necessary, can be used to define visual appearence of the model elements.
+
 * [Pattern 4 (Pictorial Annotation)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm4.php)
+
+  *The pattern denotes the availability of features to assign pictorial elements, such as icons or images, to modeling elements.*
+
+  **Yes**. CWL allows to provide additional metadata for any object. That, if necessary, can be used to assign pictorial elements, such as icons or images, to modeling elements.
 
 * [Pattern 5 (Textual Annotation)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm5.php)
 
+  *The pattern denotes the availability of features to visually represent free-form text in the canvas, which can be attached to modeling elements without changing semantics.*
+ 
+  **Yes**. CWL allows to use human-readable labels and documentation strings set in the `label` and `doc` fields. In addition, any CWL object can be extended with the extra metadata fields.
+
 * [Pattern 6 (Explicit Representation)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm6.php)
+
+  *The pattern denotes the ability to capture process modeling concepts via a dedicated graphical notation.*
+
+  **Yes**. CWL allows to provide additional metadata for any object. That, if necessary, can be used to capture and highlight process modeling concepts.
 
 * [Pattern 7 (Alternative Representation)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm7.php)
 
+  *The pattern denotes the ability to capture process modeling concepts without the use of their primary graphical notation.*
+
+  **No**. Even if CWL allows to provide additional metadata for any object, it will be more like an *Explicit Representation* rather then *Alternative Representation*.
+
 * [Pattern 8 (Naming Guidance)](http://www.workflowpatterns.com/patterns/presentation/concretesyntax/csm8.php)
+
+  *The pattern refers to the availability of naming conventions or advice for model elements’ labels.*
+
+  **No**. CWL supports any human-readable labels and documentation strings set in the `label` and `doc` fields of the model elements.
