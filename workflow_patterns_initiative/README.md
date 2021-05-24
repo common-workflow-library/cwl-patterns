@@ -7,7 +7,7 @@ Each sub-folder analyzes the features of CWL against a category of patterns foun
 - [Data](data/README.md) patterns
 - Exception Handling patterns
 - [Presentation](presentation/README.md) patterns
-- Event Log Imperfection patterns
+- [Event](event/README.md) Log Imperfection patterns
 
 
 Note: the WPI's definition of a workflow is much broader than the type of workflows CWL aims to describe.
