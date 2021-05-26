@@ -3,7 +3,7 @@
 
 Of the 11 WPI Event Log Imperfection patterns, 0 patterns are supported by CWL v1.2 or earlier and 11 patterns are unsupported. Most of the patterns below are more like "anti-patterns" which should be avoided as they make process mining analysis more complicated.
 
-CWL specification doesn't define any special mechanisms for capturing and saving event logs. Redirecting `stdout` and `stderr` streams to files is not part of the event logs system. Some of the Event Log Imperfection patters may still occur on the workflow management system level.
+CWL specification doesn't define any special mechanisms for capturing and saving event logs. Redirecting `stdout` and `stderr` streams to files is not part of the event logs system. Some of the Event Log Imperfection patterns may still occur on the workflow management system level.
 
 [Back to the list of WPI pattern categories](../README.md)
 
@@ -30,7 +30,7 @@ CWL specification doesn't define any special mechanisms for capturing and saving
 
   *This pattern refers to events in an event log which have attributes that contain further information that can be used to derive new events.*
 
-  **No.** However, this pattern may occur on the workflow management system level. As an example, by default CWL-Airflow allows several retries for the failed task. Every task execution results in creation of the separate event log files, however they are all still accessible by retry attempt number.
+  **No.** However, this pattern may occur on the workflow management system level. As an example, by default CWL-Airflow allows several retries for the failed task. Every task execution results in creation of the separate event log file, however they are all still accessible by the retry attempt number.
 
 * :negative_squared_cross_mark: [Pattern 5 (Elusive Case)](http://www.workflowpatterns.com/patterns/logimperfection/elp5.php)
 
