@@ -3,9 +3,9 @@ http://www.workflowpatterns.com/
 Each sub-folder analyzes the features of CWL against a category of patterns found in the Workflow Patterns Initiative's website.
 
 - [Control](control/README.md) patterns
-- Resource patterns
+- [Resource](resource/README.md) patterns
 - [Data](data/README.md) patterns
-- Exception Handling patterns
+- [Exception](exception/README.md) Handling patterns
 - Presentation patterns
 - Event Log Imperfection patterns
 
