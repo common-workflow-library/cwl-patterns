@@ -33,7 +33,8 @@ A Process can be run with unique data inputs multiple times in a CWL workflow an
 
 "Direct tool support for data elements at case level with case level scoping. Case data visible to all components of the case.": No, in CWL each Process only has access to its own defined inputs. Those inputs might be connected to Workflow-scope inputs (or the outputs from other steps) but there is no “global” or case namespace accessible from all levels of a workflow.
 
-* <a href="http://www.workflowpatterns.com/patterns/data/visibility/wdp6.php">Pattern 6 (Folder Data)</a>No. As CWL does not have a Case Data concept, it can not have a Folder Data concept either.
+* <a href="http://www.workflowpatterns.com/patterns/data/visibility/wdp6.php">Pattern 6 (Folder Data)</a>
+No. As CWL does not have a Case Data concept, it can not have a Folder Data concept either.
 
 * <a href="http://www.workflowpatterns.com/patterns/data/visibility/wdp7.php">Pattern 7 (Workflow Data)</a>
 
@@ -132,7 +133,8 @@ No, this is not part of the CWL standards. But another system could initiate the
 
 * <a href="http://www.workflowpatterns.com/patterns/data/routing/wdp40.php">Pattern 40 (Data-Based Routing)</a>
 
-* "Any data element accessible at case level can be utilised in a routing construct". Any output from a sibling CWL step can be used to decide if a CWL step should be executed, yes.“Direct workflow support”: Yes, using the “when” field in a CWL workflow step definition.
+* "Any data element accessible at case level can be utilised in a routing construct". Any output from a sibling CWL step can be used to decide if a CWL step should be executed, yes.
+“Direct workflow support”: Yes, using the “when” field in a CWL workflow step definition.
 
 "Support for both exclusive choice and multi-choice constructs" These can be emulated, but not directly enforced.
 
