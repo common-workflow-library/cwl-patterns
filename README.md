@@ -121,3 +121,32 @@ warnings and will fail on execution because of port type mismatches.
 
 [Here](port-matching/workflow-value-from.cwl) is the same workflow with
 `valueFrom` added to make the port types match.
+
+
+## Some commonly used Javascript expression tools
+You can tailor the input/output types to your situation.
+
+### Flatten a nested array into an array
+[Here](javascript_snippets/flatten-nestedarray.cwl) This tool flattens an
+array such as \[\["a0", "a1"\], \["b0", "b1"\]\] into \["a0", "a1", "b0", "b1"\].
+
+### Divide an array into batches with a given batch size
+[Here](javascript_snippets/batch-array.cwl) This tool divides an array such as
+\["a0", "a1", "a2", "a3", "a4"\] into a nested array
+\[\["a0", "a1"\], \["a2", "a3"\], \["a4"\]\] with batch size 2. With batch size
+3, the batched nested array would be [\["a0", "a1", "a2"\], \["a3", "a4"\]\]
+
+### Stage an array of 'File' and 'Directory' type in a 'Directory'
+[Here](javascript_snippets/array-to-dir.cwl) This tool stages an array such as
+\[file0, dir0, file1, dir1\] in a new directory.
+
+### Stage a nested array of 'File' and 'Directory' type in a 'Directory'
+[Here](javascript_snippets/nestedarray-to-dir.cwl) This tool stages a nested array
+such as \[\[file0, dir0\], \[file1, dir1\]\] in a new directory.
+
+### Process a directory of bgzipped and indexed vcf files into an array with secondary files
+[Here](javascript_snippets/get-vcfs.cwl) This bioinformatics specific tool
+processes a 'Directory' with files such as a.vcf.gz, a.vcf.gz.tbi, b.vcf.gz,
+b.vcf.gz.tbi into an array \[a.vcf.gz, b.vcf.gz\], where a.vcf.gz.tbi is
+the secondary file of a.vcf.gz, and b.vcf.gz.tbi is the secondary file of
+b.vcf.gz.
