@@ -127,25 +127,27 @@ warnings and will fail on execution because of port type mismatches.
 You can tailor the input/output types to your situation.
 
 ### Flatten a nested array into an array
-[Here](javascript_snippets/flatten-nestedarray.cwl) This tool flattens an
+[This](javascript_snippets/flatten-nestedarray.cwl) tool flattens an
 array such as \[\["a0", "a1"\], \["b0", "b1"\]\] into \["a0", "a1", "b0", "b1"\].
 
 ### Divide an array into batches with a given batch size
-[Here](javascript_snippets/batch-array.cwl) This tool divides an array such as
+[This](javascript_snippets/batch-array.cwl) tool divides an array such as
 \["a0", "a1", "a2", "a3", "a4"\] into a nested array
 \[\["a0", "a1"\], \["a2", "a3"\], \["a4"\]\] with batch size 2. With batch size
 3, the batched nested array would be [\["a0", "a1", "a2"\], \["a3", "a4"\]\]
 
 ### Stage an array of 'File' and 'Directory' type in a 'Directory'
-[Here](javascript_snippets/array-to-dir.cwl) This tool stages an array such as
-\[file0, dir0, file1, dir1\] in a new directory.
+[This](javascript_snippets/array-to-dir.cwl) tool stages an array such as
+\[file0, dir0, file1, dir1\] in a new directory, with file0, dir0, file1, dir1
+as its content.
 
 ### Stage a nested array of 'File' and 'Directory' type in a 'Directory'
-[Here](javascript_snippets/nestedarray-to-dir.cwl) This tool stages a nested array
-such as \[\[file0, dir0\], \[file1, dir1\]\] in a new directory.
+[This](javascript_snippets/nestedarray-to-dir.cwl) tool stages a nested array
+such as \[\[file0, dir0\], \[file1, dir1\]\] in a new directory, with
+file0, dir0, file1, dir1 as its content.
 
-### Process a directory of bgzipped and indexed vcf files into an array with secondary files
-[Here](javascript_snippets/get-vcfs.cwl) This bioinformatics specific tool
+### Process a directory of bgzipped and indexed vcf files into an array
+[This](javascript_snippets/get-vcfs.cwl) bioinformatics specific tool
 processes a 'Directory' with files such as a.vcf.gz, a.vcf.gz.tbi, b.vcf.gz,
 b.vcf.gz.tbi into an array \[a.vcf.gz, b.vcf.gz\], where a.vcf.gz.tbi is
 the secondary file of a.vcf.gz, and b.vcf.gz.tbi is the secondary file of
