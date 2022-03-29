@@ -134,7 +134,7 @@ array such as \[\["a0", "a1"\], \["b0", "b1"\]\] into \["a0", "a1", "b0", "b1"\]
 [batch-array.cwl](javascript_snippets/batch-array.cwl) shows how to divide an array such as
 \["a0", "a1", "a2", "a3", "a4"\] into a nested array
 \[\["a0", "a1"\], \["a2", "a3"\], \["a4"\]\] with batch size 2. With batch size
-3, the batched nested array would be [\["a0", "a1", "a2"\], \["a3", "a4"\]\]
+3, the batched nested array would be [\["a0", "a1", "a2"\], \["a3", "a4"\]\].
 
 ### Stage an array of 'File' and 'Directory' type in a 'Directory'
 [array-to-dir.cwl](javascript_snippets/array-to-dir.cwl) shows how to stage an array such as
@@ -147,7 +147,7 @@ such as \[\[file0, dir0\], \[file1, dir1\]\] in a new directory, with
 file0, dir0, file1, dir1 as its content.
 
 ### Process a directory of bgzipped and indexed vcf files into an array
-[get-vcfs.cwl](javascript_snippets/get-vcfs.cwl) is an example of a bioinformatics specific tool that
+[get-vcfs.cwl](javascript_snippets/get-vcfs.cwl) is a bioinformatics specific tool that
 processes a 'Directory' with files such as a.vcf.gz, a.vcf.gz.tbi, b.vcf.gz,
 b.vcf.gz.tbi into an array \[a.vcf.gz, b.vcf.gz\], where a.vcf.gz.tbi is
 the secondary file of a.vcf.gz, and b.vcf.gz.tbi is the secondary file of
