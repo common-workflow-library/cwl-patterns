@@ -127,28 +127,28 @@ warnings and will fail on execution because of port type mismatches.
 You can tailor the input/output types to your situation.
 
 ### Flatten a nested array into an array
-[This](javascript_snippets/flatten-nestedarray.cwl) tool flattens an
+[flatten-nestedarray.cwl](javascript_snippets/flatten-nestedarray.cwl) shows how to flatten an
 array such as \[\["a0", "a1"\], \["b0", "b1"\]\] into \["a0", "a1", "b0", "b1"\].
 
 ### Divide an array into batches with a given batch size
-[This](javascript_snippets/batch-array.cwl) tool divides an array such as
+[batch-array.cwl](javascript_snippets/batch-array.cwl) shows how to divide an array such as
 \["a0", "a1", "a2", "a3", "a4"\] into a nested array
 \[\["a0", "a1"\], \["a2", "a3"\], \["a4"\]\] with batch size 2. With batch size
 3, the batched nested array would be [\["a0", "a1", "a2"\], \["a3", "a4"\]\]
 
 ### Stage an array of 'File' and 'Directory' type in a 'Directory'
-[This](javascript_snippets/array-to-dir.cwl) tool stages an array such as
+[array-to-dir.cwl](javascript_snippets/array-to-dir.cwl) shows how to stage an array such as
 \[file0, dir0, file1, dir1\] in a new directory, with file0, dir0, file1, dir1
 as its content.
 
 ### Stage a nested array of 'File' and 'Directory' type in a 'Directory'
-[This](javascript_snippets/nestedarray-to-dir.cwl) tool stages a nested array
+[nestedarray-to-dir.cwl](javascript_snippets/nestedarray-to-dir.cwl) shows how to stage a nested array
 such as \[\[file0, dir0\], \[file1, dir1\]\] in a new directory, with
 file0, dir0, file1, dir1 as its content.
 
 ### Process a directory of bgzipped and indexed vcf files into an array
-[This](javascript_snippets/get-vcfs.cwl) bioinformatics specific tool
+[get-vcfs.cwl](javascript_snippets/get-vcfs.cwl) is an example of a bioinformatics specific tool that
 processes a 'Directory' with files such as a.vcf.gz, a.vcf.gz.tbi, b.vcf.gz,
 b.vcf.gz.tbi into an array \[a.vcf.gz, b.vcf.gz\], where a.vcf.gz.tbi is
 the secondary file of a.vcf.gz, and b.vcf.gz.tbi is the secondary file of
-b.vcf.gz.
+b.vcf.gz, respectively.
